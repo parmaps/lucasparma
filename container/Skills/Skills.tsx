@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.module.scss";
 
 type Props = {};
 
