@@ -14,7 +14,6 @@ function Header({}: Props) {
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition="1.5s ">
-        {/* Social Icons */}
         <SocialIcon
           url="https://www.linkedin.com/in/lucas-parma/"
           fgColor="white"
