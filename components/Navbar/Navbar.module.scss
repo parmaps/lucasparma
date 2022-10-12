@@ -1,3 +1,15 @@
+$dark-color: rgba(27, 30, 19, 1);
+$white-color: rgba(227, 230, 219, 1);
+$text-color: rgba(220, 255, 121, 1);
+$light-color: rgba(214, 253, 255, 1);
+$blue-color: rgba(35, 87, 137, 0.75);
+
+.navbar {
+    background-color: $dark-color;
+    border-radius: 2px;
+    box-shadow: 2px 1px 5px 1px $blue-color;
+}
+
 .navbar_links {
     display: flex;
     flex: 1;

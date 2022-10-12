@@ -2,10 +2,7 @@ $dark-color: rgb(30, 33, 22);
 $test-color: rgb(204, 255, 51);
 $text-color: rgb(220, 255, 121);
 
-
-
 .container {
-  padding: 0 2rem;
   background-color: $dark-color;
   color: $text-color;
 }
@@ -19,36 +16,10 @@ $text-color: rgb(220, 255, 121);
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px; 
-}
-
 
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}

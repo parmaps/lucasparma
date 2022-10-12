@@ -24,8 +24,9 @@ const Navbar = (props: Props) => {
   const links = ["home", "about", "contact", "skills", "projects"];
   const [toggle, setToggle] = useState(false);
 
+
   return (
-    <Flex maxW="960px" maxH="32px" mx="auto" px="auto">
+    <Flex as="nav" align="center" justify="space-between" maxH="36px" className={styles.navbar}>
       <Box
         as={motion.div}
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -46,7 +47,7 @@ const Navbar = (props: Props) => {
           bgColor="#235789"
         />
       </Box>
-      <Spacer />
+      {/* <Spacer /> */}
       <Box
         as={motion.div}
         initial={{ x: 500, opacity: 0, scale: 0.75 }}

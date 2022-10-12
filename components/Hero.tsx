@@ -1,5 +1,6 @@
 import { Box, Center } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Circle from "./Circle";
@@ -26,6 +27,7 @@ export default function Hero({}: Props) {
         <Cursor cursorColor="rgb(40, 43, 32)"></Cursor>
       </Center>
       {/* <Circle></Circle> */}
+      {/* {<Image alt='profile' src='/lucas-parma-profile.png' width='200' height='200'></Image>} */}
     </div>
   );
 }
