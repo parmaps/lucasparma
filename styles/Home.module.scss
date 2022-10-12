@@ -3,6 +3,7 @@ $test-color: rgb(204, 255, 51);
 $text-color: rgb(220, 255, 121);
 
 
+
 .container {
   padding: 0 2rem;
   background-color: $dark-color;
@@ -23,7 +24,7 @@ $text-color: rgb(220, 255, 121);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 800px; 
 }
 
 

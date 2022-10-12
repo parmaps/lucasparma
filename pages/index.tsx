@@ -21,15 +21,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Header />
       <section id="hero">
         <Hero />
       </section>
-      <About />
+      {/* <About />
       <Projects />
       <Skills />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

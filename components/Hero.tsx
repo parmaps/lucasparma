@@ -1,9 +1,31 @@
-import React from 'react'
+import { Box, Center } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import React from "react";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import Circle from "./Circle";
 
-type Props = {}
+type Props = {};
 
 export default function Hero({}: Props) {
+  const [text, count] = useTypewriter({
+    words: ["Hola, soy Lucas Parma"],
+    typeSpeed: 44,
+  });
+
   return (
-    <div>Hero</div>
-  )
+    <div>
+      <Center
+        as={motion.div}
+        initial={{ opacity: 0.25 }}
+        animate={{
+          scale: [1, 2, 2, 5, 1],
+          opacity: [0.1, 0.2, 0.4, 0.8, 1],
+        }}
+        transition="3s">
+        <h1>{text}</h1>
+        <Cursor cursorColor="rgb(40, 43, 32)"></Cursor>
+      </Center>
+      {/* <Circle></Circle> */}
+    </div>
+  );
 }
