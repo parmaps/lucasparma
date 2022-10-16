@@ -7,8 +7,9 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <VStack maxW={[300, 400, 450]} mx="auto">
-      <br /><br />
-      <Text className={styles.about} fontSize={['sm', 'md', 'lg', 'xl']}  p={[0.5, 1, 1.5]}>
+      <Divider/>     
+      
+      <Text className={styles.about} fontSize={['16px', '20px', '24px']} pt={[1, 3]}>
         Sobre mí
       </Text>
       <Text className={styles.about_text} fontSize={['sm', 'md', 'lg']}>

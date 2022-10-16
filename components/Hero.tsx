@@ -26,7 +26,7 @@ export default function Hero({}: Props) {
           opacity: [0.1, 0.2, 0.4, 0.8, 1],
         }}
         transition="3s">
-        <Text fontSize={['22px', '28px', '36px']} p={[1, 1.5, 2]}>
+        <Text fontSize={['20px', '25px', '30px']} p={[1, 1.5, 2]}>
           {text}
         </Text>
         <Cursor cursorColor="rgb(40, 32, 43)"></Cursor>
