@@ -18,7 +18,7 @@ import { MdClearAll } from "react-icons/md";
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const links = ["about", "skills", "projects", "contact"];
+  const links = ["about", "skills", "proyectos", "contacto"];
   const [toggle, setToggle] = useState(false);
 
   return (

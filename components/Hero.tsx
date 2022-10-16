@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.scss";
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, Divider, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -26,7 +26,9 @@ export default function Hero({}: Props) {
           opacity: [0.1, 0.2, 0.4, 0.8, 1],
         }}
         transition="3s">
-        <h2>{text}</h2>
+        <Text fontSize={['22px', '28px', '36px']} p={[1, 1.5, 2]}>
+          {text}
+        </Text>
         <Cursor cursorColor="rgb(40, 32, 43)"></Cursor>
       </Center>
       <Circle></Circle>

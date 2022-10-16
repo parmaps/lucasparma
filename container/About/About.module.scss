@@ -2,12 +2,14 @@
 
 .about {
     color: $sections-grad-color;
+    font-weight: 400;
     text-transform: uppercase;    
     letter-spacing: 0.2em;
 }
 
 .about_text {
     color: $light-color;
-    text-align: justify;
-    text-justify: inter-character;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.01em;
 }

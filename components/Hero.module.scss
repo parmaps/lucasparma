@@ -2,7 +2,8 @@ $text-color: rgba(0, 168, 232, 0.8);
 $bg-color: rgba(0, 168, 232, 0.075);
 
 .hero {
-    color: $text-color;
-    letter-spacing: 0.15em;
+    color: $text-color;    
+    font-weight: 500;
+    letter-spacing: 0.2em;
     background-color: $bg-color;
 }
