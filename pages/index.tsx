@@ -11,6 +11,7 @@ import {
 } from "../container";
 import { Navbar } from "../components";
 import Hero from "../components/Hero";
+import Proyectos from "../container/Proyectos/Proyectos";
 
 const Home: NextPage = () => {
   return (
@@ -27,11 +28,15 @@ const Home: NextPage = () => {
         <Hero />
       </section>
 
-     {/*  <section id="about">
+      <section id="about">
         <About />
-      </section> */}
+      </section>
 
-      {/* <Projects />
+      <section id="proyectos">
+        <Proyectos />
+      </section>
+
+      {/* 
       <Skills />
       <Contact />
       <Footer /> */}

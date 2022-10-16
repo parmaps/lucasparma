@@ -8,7 +8,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     color: $light-color;
     background-color: $dark-color;
     border-radius: 2px;
-    box-shadow: 2px 1px 5px 1px $blue-color;
+    box-shadow: 2px 1px 5px 1px $shadow-color;
     letter-spacing: 0.5px;
     position: sticky;
     top: 0;
@@ -20,7 +20,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     justify-content: center;
     align-items: center;
     list-style: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     li {
         margin: 0 1rem;
@@ -55,29 +55,10 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     margin: 5px;
     cursor: pointer;
 
-
-
     svg {
-        width: 75%;
-        height: 75%;
-        color: #D6FDFF;
-        
-
-
-        div {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 5;
-            padding: 1rem;
-            width: 80%;
-            height: 100vh;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            flex-direction: column;
-        }
+        width: 70%;
+        height: 75%;        
+        color: #D6FDFF;        
 
     }
 
@@ -91,6 +72,6 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background-color: rgb(45, 97, 137);
+        background-color: rgb(45, 97, 137) !important;
     }
 }
