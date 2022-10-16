@@ -1,13 +1,17 @@
-$dark-color: rgba(27, 30, 19, 1);
-$white-color: rgba(227, 230, 219, 1);
-$text-color: rgba(220, 255, 121, 1);
-$light-color: rgba(214, 253, 255, 1);
-$blue-color: rgba(35, 87, 137, 0.75);
+@import "../../styles/colors.module.scss";
+
+$dark-color: rgba(21, 15, 24, 0.9);
+$light-color: rgba(214, 253, 255, 0.7);
+$light-color-hover: rgba(214, 253, 255, 0.8);
 
 .navbar {
+    color: $light-color;
     background-color: $dark-color;
     border-radius: 2px;
     box-shadow: 2px 1px 5px 1px $blue-color;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
 }
 
 .navbar_links {
@@ -16,6 +20,7 @@ $blue-color: rgba(35, 87, 137, 0.75);
     justify-content: center;
     align-items: center;
     list-style: none;
+    text-transform: capitalize;
 
     li {
         margin: 0 1rem;
@@ -23,12 +28,11 @@ $blue-color: rgba(35, 87, 137, 0.75);
         font-size: small;
 
         a {
-            text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 400;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                color: rgba(200, 255, 50, 0.9);
+                color: $light-color-hover;
             }
         }
     }
@@ -48,6 +52,8 @@ $blue-color: rgba(35, 87, 137, 0.75);
     justify-content: center;
     align-items: center;
     background-color: #235789;
+    margin: 5px;
+    cursor: pointer;
 
 
 
@@ -55,6 +61,7 @@ $blue-color: rgba(35, 87, 137, 0.75);
         width: 75%;
         height: 75%;
         color: #D6FDFF;
+        
 
 
         div {

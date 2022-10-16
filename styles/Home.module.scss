@@ -1,10 +1,11 @@
-$dark-color: rgb(30, 33, 22);
-$test-color: rgb(204, 255, 51);
-$text-color: rgb(220, 255, 121);
+@import "./colors.module.scss";
 
 .container {
-  background-color: $dark-color;
+  /* background-color: $dark-color; */
+  background: $background-gradient;
   color: $text-color;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
 }
 
 .code {
@@ -15,7 +16,6 @@ $text-color: rgb(220, 255, 121);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
 
 .logo {
   height: 1em;

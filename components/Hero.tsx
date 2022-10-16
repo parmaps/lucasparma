@@ -1,21 +1,24 @@
+import React from "react";
+import styles from "./Hero.module.scss";
 import { Box, Center } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Circle from "./Circle";
+import Circle from "./Profession";
+import ProfilePic from "./ProfilePic";
 
 type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hola, soy Lucas Parma"],
+    words: ["LUCAS PARMA"],
     typeSpeed: 44,
   });
 
   return (
     <div>
       <Center
+        className={styles.hero}
         as={motion.div}
         initial={{ opacity: 0.25 }}
         animate={{
@@ -23,11 +26,11 @@ export default function Hero({}: Props) {
           opacity: [0.1, 0.2, 0.4, 0.8, 1],
         }}
         transition="3s">
-        <h1>{text}</h1>
-        <Cursor cursorColor="rgb(40, 43, 32)"></Cursor>
+        <h2>{text}</h2>
+        <Cursor cursorColor="rgb(40, 32, 43)"></Cursor>
       </Center>
-      {/* <Circle></Circle> */}
-      {/* {<Image alt='profile' src='/lucas-parma-profile.png' width='200' height='200'></Image>} */}
+      <Circle></Circle>
+      <ProfilePic />
     </div>
   );
 }

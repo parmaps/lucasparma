@@ -1,0 +1,13 @@
+@import "../../styles/colors.module.scss";
+
+.about {
+    color: $sections-grad-color;
+    text-transform: uppercase;    
+    letter-spacing: 0.2em;
+}
+
+.about_text {
+    color: $light-color;
+    text-align: justify;
+    text-justify: inter-character;
+}

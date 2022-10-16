@@ -3,30 +3,31 @@ import styles from "./Navbar.module.scss";
 import { SocialIcon } from "react-social-icons";
 import {
   Box,
-  Center,
   Flex,
   IconButton,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Spacer,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { FaBeer } from "react-icons/fa";
 import { MdClearAll } from "react-icons/md";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const links = ["home", "about", "contact", "skills", "projects"];
+  const links = ["about", "skills", "projects", "contact"];
   const [toggle, setToggle] = useState(false);
 
-
   return (
-    <Flex as="nav" align="center" justify="space-between" maxH="36px" className={styles.navbar}>
+    <Flex
+      as="nav"
+      align="center"
+      justify="space-between"
+      maxH="36px"
+      className={styles.navbar}>
       <Box
         as={motion.div}
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
