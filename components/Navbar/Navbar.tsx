@@ -3,6 +3,8 @@ import styles from "./Navbar.module.scss";
 import { Flex } from "@chakra-ui/react";
 import SocialIcons from "./SocialIcons";
 import NavLinks from "./NavLinks";
+import Hero from "../Hero/Hero";
+import Name from "../Hero/Name";
 
 type Props = {};
 
@@ -15,6 +17,7 @@ const Navbar = (props: Props) => {
       maxH="50px"
       className={styles.navbar}>
       <SocialIcons />
+      <Name />
       <NavLinks />
     </Flex>
   );

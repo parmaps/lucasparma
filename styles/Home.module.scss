@@ -22,4 +22,48 @@
   margin-left: 0.5rem;
 }
 
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.shape_fill {
+  fill: orange;
+  /* fill: rgba(26,66,120,0.5); */
+  /* fill: #1A427880; */
+  /* fill: #781A4880; */
+}
+
+.shape_fill_blue {
+  fill: rgba(26, 66, 120, 1);
+  /* fill: #1A427880; */
+  /* fill: #781A4880; */
+}
+
+.wave_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+  }
+}
