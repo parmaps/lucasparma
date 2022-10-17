@@ -1,4 +1,6 @@
 import React from "react";
+import ProfilePic from "../../components/Hero/ProfilePic";
+import About from "../About/About";
 import "./Proyectos.module.scss";
 
 type Props = {};

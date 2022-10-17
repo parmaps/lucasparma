@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import { Flex } from "@chakra-ui/react";
+import { Center, Flex } from "@chakra-ui/react";
 import SocialIcons from "./SocialIcons";
 import NavLinks from "./NavLinks";
 import Hero from "../Hero/Hero";
