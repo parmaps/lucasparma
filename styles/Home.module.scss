@@ -2,7 +2,7 @@
 
 .container {
   /* background-color: $dark-color; */
-  background: $background-gradient;
+  background: $background-color;
   color: $text-color;
   font-family: Roboto, sans-serif;
   font-weight: 100;
@@ -23,3 +23,93 @@
 }
 
 
+// Top Wave
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.shape_fill {
+  margin-bottom: 200px;
+  fill: orange;
+  /* fill: rgba(26,66,120,0.5); */
+  /* fill: #1A427880; */
+  /* fill: #781A4880; */
+}
+
+
+
+
+
+// Middle waves
+#section1 {
+  background-color: rgba(26, 66, 120, 1);
+  margin-bottom: 100px;
+
+  h2,
+  p {
+    color: $light-color;
+  }
+}
+
+.wave_middle {
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 230px);
+    height: 60px;
+  }
+}
+
+.shape_fill_blue {
+  fill: rgba(26, 66, 120, 1);
+}
+
+.shape_fill2 {
+  fill: $background-color;
+  border: none;
+  /* fill: orange; */
+
+}
+
+// Footer Wave
+.wave_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+  }
+}
+
+.sect_orange {
+  background-color: rgba(255,155,0, 0.8);
+}

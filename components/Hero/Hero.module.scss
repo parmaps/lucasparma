@@ -1,11 +1,11 @@
-@import "../styles/colors.module.scss";
+@import "../../styles/colors.module.scss";
 
 $text-color: rgba(0, 168, 232, 0.8);
 $bg-color: rgba(0, 168, 232, 0.075);
 
-.hero {
+.hero_name {
     color: $sections-grad-color;    
     font-weight: 600;
     letter-spacing: 0.2em;
-    background-color: $bg-color;
+    /* background-color: $bg-color; */
 }

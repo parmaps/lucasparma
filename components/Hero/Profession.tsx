@@ -15,7 +15,7 @@ function Circle({}: Props) {
         opacity: [0.1, 0.2, 0.4, 0.8, 1],
       }}
       transition="2.5s">
-      <Text className={styles.developer} fontSize={['12px', '15px', '18px']} p={[2, 3, 5]}>full stack developer</Text>
+      <Text className={styles.developer} fontSize={['12px', '16px', '20px']} mt={[5]} p={[2, 3, 5]}>full stack developer</Text>
     </Center>
   );
 }

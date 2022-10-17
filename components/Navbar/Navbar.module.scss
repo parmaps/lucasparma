@@ -1,6 +1,6 @@
 @import "../../styles/colors.module.scss";
 
-$dark-color: rgba(21, 15, 24, 0.9);
+$dark-color: rgba(21, 15, 24, 0.95);
 $light-color: rgba(214, 253, 255, 0.7);
 $light-color-hover: rgba(214, 253, 255, 0.8);
 
@@ -12,6 +12,8 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     letter-spacing: 0.5px;
     position: sticky;
     top: 0;
+    opacity: 1;
+    z-index: 10;
 }
 
 .navbar_links {
@@ -37,7 +39,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
         display: none
     }
 }
@@ -62,7 +64,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
 
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 800px) {
         display: none !important;
     }
 }

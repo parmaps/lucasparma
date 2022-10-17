@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <VStack maxW={[300, 400, 450]} mx="auto">
+    <VStack maxW={[300, 400, 450]} mx="auto" mb={[10, 25, 30]}>
       <Divider/>     
       
       <Text className={styles.about} fontSize={['16px', '20px', '24px']} pt={[1, 3]}>
