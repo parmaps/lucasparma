@@ -42,7 +42,7 @@
 
 .shape_fill {
   margin-bottom: 200px;
-  fill: orange;
+  fill: $orange;
   /* fill: rgba(26,66,120,0.5); */
   /* fill: #1A427880; */
   /* fill: #781A4880; */
@@ -111,5 +111,5 @@
 }
 
 .sect_orange {
-  background-color: rgba(255,155,0, 0.8);
+  background-color: $orange;
 }

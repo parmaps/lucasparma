@@ -14,6 +14,7 @@ import Hero from "../components/Hero/Hero";
 import Proyectos from "../container/Proyectos/Proyectos";
 import WaveMiddle from "../components/Curves/WaveMiddle";
 import WavesBottom from "../components/Curves/WavesBottom";
+import { HStack } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
@@ -45,15 +46,16 @@ const Home: NextPage = () => {
       </div>
 
       <Navbar />
-
+      {/* <HStack> */}
       <section id="home">
         <Hero />
       </section>
 
       <section id="about">
         <About />
-        <WaveMiddle />
       </section>
+      {/* </HStack> */}
+        <WaveMiddle />
 
       <section id="skills" className={styles.sect_orange}>
         <br />
