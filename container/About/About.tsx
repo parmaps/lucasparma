@@ -29,7 +29,7 @@ const About = (props: Props) => {
         <Text
           className={styles.about}
           fontSize={["14px", "16px", "20px", "24px"]}
-          pt={[1, 2, 6]}
+          pt={[1, 2, 20]}
           >
           Sobre mí
         </Text>
