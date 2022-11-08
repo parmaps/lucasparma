@@ -46,16 +46,18 @@ const Home: NextPage = () => {
       </div>
 
       <Navbar />
+      <div className={styles.horizontal}>
       {/* <HStack> */}
-      <section id="home">
-        <Hero />
-      </section>
+        <section id="home">
+          <Hero />
+        </section>
 
-      <section id="about">
-        <About />
-      </section>
+        <section id="about">
+          <About />
+        </section>
       {/* </HStack> */}
-        <WaveMiddle />
+      </div>
+      <WaveMiddle />
 
       <section id="skills" className={styles.sect_orange}>
         <br />
