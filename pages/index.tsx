@@ -49,10 +49,10 @@ const Home: NextPage = () => {
       </div>
 
       <Navbar />
+      <Name />
       <div className={styles.horizontal}>
         {/* <HStack> */}
-      <Name />
-      <SocialIcons />
+      {/* <SocialIcons /> */}
         <section id="home">
           <Hero />
         </section>

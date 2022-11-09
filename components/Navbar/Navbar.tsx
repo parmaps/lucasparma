@@ -15,8 +15,7 @@ const Navbar = (props: Props) => {
       justify="space-between"
       maxH="50px"
       className={styles.navbar}>
-      <SocialIcons />
-      {/* <Name /> */}
+      <p/>
       <NavLinks />
     </Flex>
   );
