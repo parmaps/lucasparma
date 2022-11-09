@@ -14,6 +14,7 @@ function Name({}: Props) {
 
   return (
     <Center
+    mt={[7, 10]}
       className={styles.hero_name}
       as={motion.div}
       initial={{ opacity: 0.25 }}
@@ -22,7 +23,7 @@ function Name({}: Props) {
         opacity: [0.1, 0.2, 0.4, 0.8, 1],
       }}
       transition="3s">
-      <Text fontSize={["20px", "24px", "28px"]} p={[1, 1.5, 2]}>
+      <Text fontSize={["20px", "30px", "40px"]} p={[1, 1.5, 2]}>
         {text}
       </Text>
       <Cursor cursorColor="rgb(40, 32, 43)"></Cursor>

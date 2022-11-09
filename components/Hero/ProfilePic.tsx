@@ -1,5 +1,4 @@
 import { Box, Center, Spacer } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -8,10 +7,10 @@ type Props = {};
 function ProfilePic({}: Props) {
   return (
     <Box
-    w={[192, 240, 320]}
+    w={[192, 260, 360, 420]}
     mx="auto"
     mt={[2.5,3]}
-    mb={[2.5, 5, 0]}
+    mb={[2.5, 5, 10]}
     /* as={motion.div}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}

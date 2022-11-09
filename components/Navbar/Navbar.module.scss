@@ -6,11 +6,11 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
 
 .navbar {
     color: $light-color;
-    background-color: $dark-color;
+    background-color: transparent;
     border-radius: 2px;
     box-shadow: 2px 1px 5px 1px $shadow-color;
     letter-spacing: 0.5px;
-    position: sticky;
+    position: relative;
     top: 0;
     opacity: 1;
     z-index: 10;
@@ -23,6 +23,12 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     align-items: center;
     list-style: none;
     text-transform: uppercase;
+    position: relative;
+    right: 27.5%;
+
+    @media (min-width: 1600px) {
+        right: 50%;
+    }
 
     li {
         margin: 0 1rem;

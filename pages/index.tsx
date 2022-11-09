@@ -15,6 +15,8 @@ import Proyectos from "../container/Proyectos/Proyectos";
 import WaveMiddle from "../components/Curves/WaveMiddle";
 import WavesBottom from "../components/Curves/WavesBottom";
 import { HStack } from "@chakra-ui/react";
+import Name from "../components/Hero/Name";
+import SocialIcons from "../components/Navbar/SocialIcons";
 
 const Home: NextPage = () => {
   return (
@@ -40,14 +42,17 @@ const Home: NextPage = () => {
             opacity=".66"
             className={styles.shape_fill}></path>
           <path
+            opacity="1"
             d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            className={styles.shape_fil}></path>
+            className={styles.shape_fill_dark}></path>
         </svg>
       </div>
 
       <Navbar />
       <div className={styles.horizontal}>
-      {/* <HStack> */}
+        {/* <HStack> */}
+      <Name />
+      <SocialIcons />
         <section id="home">
           <Hero />
         </section>
@@ -55,7 +60,7 @@ const Home: NextPage = () => {
         <section id="about">
           <About />
         </section>
-      {/* </HStack> */}
+        {/* </HStack> */}
       </div>
       <WaveMiddle />
 
