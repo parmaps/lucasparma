@@ -7,7 +7,7 @@ type Props = {};
 function ProfilePic({}: Props) {
   return (
     <Box
-    w={[192, 260, 360, 420]}
+    w={[192, 260, 340, 380]}
     mx="auto"
     mt={[2.5,3]}
     mb={[2.5, 5, 10]}
