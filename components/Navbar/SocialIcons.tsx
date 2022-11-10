@@ -17,14 +17,14 @@ function SocialIcons({}: Props) {
         transition="1.5s ">
         <SocialIcon
           className={`${styles.menu_hover}`}
-          style={{ height: 30, width: 30, margin: 5 }}
+          style={{ height: 50, width: 50, marginBottom: 5 }}
           url="https://www.linkedin.com/in/lucas-parma/"
           fgColor="#D6FDFF"
           bgColor="#235789"
         />
         <SocialIcon
           className={`${styles.menu_hover}`}
-          style={{ height: 30, width: 30 }}
+          style={{ height: 50, width: 50 }}
           url="https://github.com/parmaps/"
           fgColor="#D6FDFF"
           bgColor="#235789"

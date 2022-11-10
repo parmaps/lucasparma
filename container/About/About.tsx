@@ -15,7 +15,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <HStack maxW={[250, 360, 420]}>
+    <HStack maxW={[250, 360, 440]}>
       {/* <Divider orientation="vertical" /> */}
 
       <VStack
@@ -28,12 +28,12 @@ const About = (props: Props) => {
         transition="2.55s">
         <Text
           className={styles.about}
-          fontSize={["14px", "16px", "20px", "24px"]}
+          fontSize={["14px", "16px", "20px", "26px"]}
           pt={[1, 2, 20]}
           >
           Sobre mí
         </Text>
-        <Text className={styles.about_text} fontSize={["sm", "lg", "xl"]}>
+        <Text className={styles.about_text} fontSize={["sm", "lg", "22px"]}>
           Soy Licenciado en Psicología, y luego de recibirme me enfoqué en
           estudiar programación al sentirme convocado por una disciplina
           más práctica. Así descubrí un mundo fascinante, que me motiva a

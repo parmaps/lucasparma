@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "./Hero.module.scss";
-import { Center, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { Center, chakra, shouldForwardProp, Text } from "@chakra-ui/react";
+import { isValidMotionProp, motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
+
+const ChakraCenter = chakra(motion.div, {
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 function Name({}: Props) {
   const [text, count] = useTypewriter({
@@ -13,19 +18,32 @@ function Name({}: Props) {
   });
 
   return (
-    <Center
-      className={styles.hero_name}
-      as={motion.div}
-      initial={{ opacity: 0.25 }}
-      animate={{
-        scale: [1, 2, 2, 5, 1],
-        opacity: [0.1, 0.2, 0.4, 0.8, 1],
-      }}
-      transition="3s">
-      <Text fontSize={["20px", "24px", "28px"]} p={[1, 1.5, 2]}>
-        {text}
-      </Text>
-      <Cursor cursorColor="rgb(40, 32, 43)"></Cursor>
+    <Center>
+      <ChakraCenter
+        mt={[5, 10]}
+        className={styles.hero_name}
+        initial={{ opacity: 0.5 }}
+        drag="x"
+        dragConstraints={{ left: -100, right: 100 }}
+        animate={{
+          scale: [0.1, 0.7, 1.25, 1.1, 1],
+          opacity: [0.6, 0.7, 0.8, 0.9],
+        }}
+        transition="1.25s linear"
+        // transition={{
+        //   duration: 3,
+        //   ease: "linear",
+        //   // repeat: Infinity,
+        //   // repeatType: "reverse",
+        // }}
+      >
+        <Text
+          fontSize={["20px", "40px", "60px"]}
+          p={[1, 1.5, 2]}>
+          {text}
+        </Text>
+        {/* <Cursor cursorColor="rgb(40, 32, 43)"></Cursor> */}
+      </ChakraCenter>
     </Center>
   );
 }
