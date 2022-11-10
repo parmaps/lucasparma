@@ -11,7 +11,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     box-shadow: 2px 1px 5px 1px $shadow-color;
     letter-spacing: 0.5px;
     position: relative;
-    top: 0;    
+    top: 0;
     opacity: 1;
     z-index: 10;
     height: 50px;
@@ -66,8 +66,8 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
 
     svg {
         width: 70%;
-        height: 75%;        
-        color: #D6FDFF;        
+        height: 75%;
+        color: #D6FDFF;
 
     }
 
@@ -83,4 +83,52 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     &:hover {
         background-color: rgb(45, 97, 137) !important;
     }
+}
+
+.social_icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+        width: 35px !important;
+        height: 35px !important;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: 550px) {
+        width: 27.5px !important;
+        height: 27.5px !important;
+        margin-bottom: 0px;
+    }
+}
+
+
+.vertical_cont {
+    background-color: $light-color;
+    padding: 8px;
+    position: fixed;
+    top: 390px;
+    left: 5%;
+    z-index: 100;
+    box-shadow: 2px 2px 5px 1px $shadow-color;
+    border-radius: 30px;
+
+    @media (max-width: 768px) {
+        top: 290px;
+        left: 3.5%;
+        width: 45px;
+    }
+
+    @media (max-width: 550px) {
+        top: 300px;
+        left: 3.5%;
+        width: 37.5px;
+    }
+
+    @media (max-width: 450px) {
+        top: 220px;
+        left: 3.5%;
+        width: 35px;
+    }   
 }

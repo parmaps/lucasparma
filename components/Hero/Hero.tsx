@@ -17,8 +17,8 @@ export default function Hero({}: Props) {
 
   return (
     <div>
-     {/*  <Name/>  */}     
-      <Profession />
+      {/* <Name/>       */}
+      {/* <Profession /> */}
       <ProfilePic />
     </div>
   );

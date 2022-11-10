@@ -22,14 +22,14 @@ function Name({}: Props) {
       <ChakraCenter
         mt={[5, 10]}
         className={styles.hero_name}
-        initial={{ opacity: 0.5 }}
         drag="x"
         dragConstraints={{ left: -100, right: 100 }}
+        initial={{ opacity: 0.25 }}
         animate={{
-          scale: [0.1, 0.7, 1.25, 1.1, 1],
-          opacity: [0.6, 0.7, 0.8, 0.9],
+          scale: [1, 2, 2, 5, 1],
+          opacity: [0.1, 0.2, 0.4, 0.8, 1],
         }}
-        transition="1.25s linear"
+        transition="3s ease"
         // transition={{
         //   duration: 3,
         //   ease: "linear",
@@ -39,7 +39,8 @@ function Name({}: Props) {
       >
         <Text
           fontSize={["20px", "40px", "60px"]}
-          p={[1, 1.5, 2]}>
+          p={[1, 1.5]}
+          >
           {text}
         </Text>
         {/* <Cursor cursorColor="rgb(40, 32, 43)"></Cursor> */}

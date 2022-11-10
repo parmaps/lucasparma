@@ -16,6 +16,7 @@ import WaveMiddle from "../components/Curves/WaveMiddle";
 import WavesBottom from "../components/Curves/WavesBottom";
 import { HStack } from "@chakra-ui/react";
 import Name from "../components/Hero/Name";
+import Profession from "../components/Hero/Profession";
 import SocialIcons from "../components/Navbar/SocialIcons";
 
 const Home: NextPage = () => {
@@ -50,9 +51,10 @@ const Home: NextPage = () => {
 
       <Navbar />
       <Name />
+      <Profession />
       <div className={styles.horizontal}>
         {/* <HStack> */}
-      {/* <SocialIcons /> */}
+      <SocialIcons />
         <section id="home">
           <Hero />
         </section>
