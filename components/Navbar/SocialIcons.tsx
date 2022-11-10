@@ -12,9 +12,11 @@ function SocialIcons({}: Props) {
       as={motion.div}
       pt={1}
       pb={1}
-      initial={{ x: -500, opacity: 0, scale: 0.5 }}
-      animate={{ x: 0, opacity: 1, scale: 1 }}
-      transition="1.5s ">
+      // initial={{ opacity: 0, scale: 0.5 }}
+      // animate={{ opacity: 1, scale: 1 }}
+      // transition="1.5s "
+      // transitionDelay="1.5s"
+      >
       <VStack className={styles.vertical_cont}>
         <SocialIcon
           className={`${styles.menu_hover} ${styles.social_icon}`}
