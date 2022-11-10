@@ -29,13 +29,13 @@ function Name({}: Props) {
           scale: [0.1, 0.7, 1.25, 1.1, 1],
           opacity: [0.6, 0.7, 0.8, 0.9],
         }}
-        // transition="3s"
-        transition={{
-          duration: 3,
-          ease: "linear",
-          // repeat: Infinity,
-          // repeatType: "reverse",
-        }}
+        transition="1.25s linear"
+        // transition={{
+        //   duration: 3,
+        //   ease: "linear",
+        //   // repeat: Infinity,
+        //   // repeatType: "reverse",
+        // }}
       >
         <Text
           fontSize={["20px", "40px", "60px"]}
