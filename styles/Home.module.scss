@@ -25,7 +25,10 @@
 .horizontal {
   display: flex;
   // align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
 
   @media (max-width: 960px) {
     flex-direction: column;
