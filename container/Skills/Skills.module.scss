@@ -1,0 +1,63 @@
+@import "../../styles/colors.module.scss";
+
+.container {
+    padding: 5rem 0rem 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: $background-color;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+.front_end_cont {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    // margin-bottom: 1rem;
+    p {
+        color: $dark-color;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.front_end {
+    display: flex;
+}
+
+.back_end_cont {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    p {
+        color: $dark-color;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.back_end {
+    display: flex;
+}
+
+.others_cont {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    p {
+        color: $dark-color;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.others {
+    display: flex;
+
+}

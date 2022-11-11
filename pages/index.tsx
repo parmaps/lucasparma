@@ -52,9 +52,9 @@ const Home: NextPage = () => {
       <Navbar />
       <Name />
       <Profession />
+      <SocialIcons />
       <div className={styles.horizontal}>
         {/* <HStack> */}
-      <SocialIcons />
         <section id="home">
           <Hero />
         </section>
@@ -68,11 +68,6 @@ const Home: NextPage = () => {
 
       <section id="skills" className={styles.sect_orange}>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <About />
         <Skills />
       </section>
 
