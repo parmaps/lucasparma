@@ -28,13 +28,20 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      animate={{
+        // scale: [0.8, 1.1, 1.3, 1.1, 1],
+        opacity: [0.10, 0.20, 0.35, 0.55, 0.75, 1],
+      }}
+      transition={{ duration: 4.05, ease: "easeInOut" }}>
       <Box
         mb={[1.5, 2.5, 3.5]}
         as={motion.div}
         initial={{ opacity: 0 }}
         animate={{
-          scale: [1, 1.5, 1.8, 1.2, 1],
+          scale: [0.8, 1.1, 1.3, 1.1, 1],
           opacity: [0.05, 0.15, 0.45, 0.8, 1],
         }}
         transition="2.55s">
@@ -70,7 +77,7 @@ const Skills = (props: Props) => {
           {typeScript} {gitIcon} {gitHubIcon}{" "}
         </div>{" "}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
