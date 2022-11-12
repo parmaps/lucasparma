@@ -12,10 +12,10 @@ const About = (props: Props) => {
         pl={[0, 0, 2, 6]}
         ml={[0, 0, 1, 2.5]}
         as={motion.div}
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0.15 }}
         animate={{
           scale: [1, 1.5, 1.8, 1.2, 1],
-          opacity: [0.05, 0.15, 0.45, 0.8, 1],
+          opacity: [0.35, 0.65, 1],
         }}
         transition="2.55s">
         <Text

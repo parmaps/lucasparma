@@ -550,7 +550,7 @@ export const gitHubIcon = (
   </motion.svg>
 );
 
-export const typeScript = (
+export const typeScriptIcon = (
   <motion.svg
     viewBox="0 0 128 128"
     className={styles.icon_size}

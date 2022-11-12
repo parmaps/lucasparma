@@ -1,10 +1,14 @@
 @import "../../styles/colors.module.scss";
 
+$PAR_FONT_SIZE: 18px;
+
 .container {
     padding: 5rem 0rem 3rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 300;
+    color: black;
 }
 
 .title {
@@ -22,42 +26,72 @@
     // margin-bottom: 1rem;
     p {
         color: $dark-color;
-        font-weight: 300;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: $PAR_FONT_SIZE;
+
+        @media (max-width: 800px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 13px;
+        }
     }
 }
 
 .front_end {
     display: flex;
+    align-items: space-between;
+    justify-content: flex-end;
+    padding: 0.2rem;
+
 }
 
 .back_end_cont {
     text-align: center;
     padding-bottom: 1rem;
 
-    p {
+    h6 {
         color: $dark-color;
-        font-weight: 300;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: $PAR_FONT_SIZE;
+
+        @media (max-width: 800px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 13px;
+        }
     }
 }
 
 .back_end {
     display: flex;
+    padding: 0.2rem;
 }
 
 .others_cont {
     text-align: center;
     padding-bottom: 1rem;
 
-    p {
+    h6 {
         color: $dark-color;
-        font-weight: 300;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: $PAR_FONT_SIZE;
+
+        @media (max-width: 800px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 13px;
+        }
     }
 }
 
 .others {
     display: flex;
+    padding: 0.2rem;
 
 }
