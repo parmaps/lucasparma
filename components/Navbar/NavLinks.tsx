@@ -29,7 +29,7 @@ function NavLinks({}: Props) {
         {links.map((item) => (
           <li key={`link-${item}`}>
             <Link href={`#${item}`} passHref>
-              <ChakraLink fontSize={["12px", "15px"]}>{item}</ChakraLink>
+              <ChakraLink fontSize={["12px", "16px"]}>{item}</ChakraLink>
             </Link>
           </li>
         ))}

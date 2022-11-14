@@ -30,6 +30,12 @@ function SocialIcons({}: Props) {
           fgColor="#D6FDFF"
           bgColor="#235789"
         />
+        <SocialIcon
+          className={`${styles.menu_hover} ${styles.social_icon}`}
+          url="mailto:l.parma93@gmail.com/"
+          fgColor="#D6FDFF"
+          bgColor="#235789"
+        />  
       </VStack>
     </Box>
   );
