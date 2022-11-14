@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import { setDefaultResultOrder } from "dns";
 import React from "react";
 import styles from "./Proyectos.module.scss";
 
@@ -12,8 +13,8 @@ export default function ProyectosCard(props: Props) {
       m={[1, 3, 5]}
       minW={[100, 200, 300]}
       minH={[100, 200, 300]}>
-      <Heading fontSize="xl">{props.title}</Heading>
-      <Text mt={4}>{props.desc}</Text>
+      <Heading className={styles.card_title} fontSize="l">{props.title}</Heading>
+      <Text className={styles.card_text} mt={4}>{props.desc}</Text>
     </Box>
   );
 }
