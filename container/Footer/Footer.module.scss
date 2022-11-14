@@ -1,0 +1,36 @@
+@import "../../styles/colors.module.scss";
+
+$dark-color: rgba(21, 15, 24, 0.95);
+$light-color: rgba(214, 253, 255, 0.7);
+$light-color-hover: rgba(214, 253, 255, 0.8);
+
+.navbar {
+    color: $light-color;
+    background-color: transparent;
+    border-radius: 2px;
+    box-shadow: 2px 1px 5px 1px $shadow-color;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    z-index: 10;
+    height: 50px;
+}
+
+.icons_cont {
+    background-color: transparent;
+    display: flex;
+    z-index: 100;
+
+    @media (max-width: 768px) {
+        // width: 500px;
+    }
+
+    @media (max-width: 550px) {
+        // width: 37.5px;
+    }
+
+    @media (max-width: 450px) {
+        // width: 35px;
+    }   
+}

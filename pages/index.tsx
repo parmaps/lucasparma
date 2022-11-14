@@ -13,11 +13,11 @@ import { Navbar } from "../components";
 import Hero from "../components/Hero/Hero";
 import Proyectos from "../container/Proyectos/Proyectos";
 import WaveMiddle from "../components/Curves/WaveMiddle";
-import WavesBottom from "../components/Curves/WavesBottom";
-import { HStack } from "@chakra-ui/react";
+import WaveMiddleBlue from "../components/Curves/WaveMiddleBlue";
 import Name from "../components/Hero/Name";
 import Profession from "../components/Hero/Profession";
 import SocialIcons from "../components/Navbar/SocialIcons";
+import WavesBottom from "../components/Curves/WavesBottom";
 
 const Home: NextPage = () => {
   return (
@@ -70,21 +70,16 @@ const Home: NextPage = () => {
         <br />
         <Skills />
       </section>
+      {/* <WaveMiddle /> */}
+      <WaveMiddleBlue />
 
-      <section id="proyectos">
+      {/* <section id="proyectos">
         <Proyectos />
-      </section>
-
-      {/* <section id={styles.section1}>
-        <h2>Nice Curves</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-          autem dolorem consequuntur quia ullam excepturi sed aliquid
-          labore voluptatem, porro perferendis tempore exercitationem quis
-          enim voluptatibus? Modi officia beatae necessitatibus.
-        </p>
-        
       </section> */}
+
+      <section className={styles.sect_blue}>
+        <About />
+      </section>
 
       <Contact />
       <Footer />
