@@ -70,17 +70,13 @@ const Home: NextPage = () => {
         <br />
         <Skills />
       </section>
-      {/* <WaveMiddle /> */}
       <WaveMiddleBlue />
 
-      {/* <section id="proyectos">
+      <section id="proyectos" className={styles.sect_blue}>
         <Proyectos />
-      </section> */}
-
-      <section className={styles.sect_blue}>
-        <About />
       </section>
 
+      {/*  */}
       <Contact />
       <Footer />
       <WavesBottom />

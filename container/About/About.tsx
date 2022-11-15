@@ -19,7 +19,7 @@ const About = (props: Props) => {
         }}
         transition="2.55s">
         <Text
-          className={styles.about}
+          className={styles.about_title}
           fontSize={["14px", "16px", "20px", "26px"]}
           pt={[1]}>
           Sobre mí
@@ -31,7 +31,7 @@ const About = (props: Props) => {
           estudiar programación al sentirme convocado por una disciplina
           más práctica. Así descubrí un mundo fascinante, que me motiva a
           desafiarme y seguir mejorando cada día. Me destaco por aprender
-          rápido, mi capacidad de escucha activa y mi nivel de compromiso.{" "}
+          rápido, por mi capacidad de escucha activa y mi nivel de compromiso.{" "}
         </Text>
       </VStack>
     </HStack>
