@@ -1,13 +1,20 @@
-import { Center, Flex, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 import styles from "./Proyectos.module.scss";
 import ProyectosCard from "./ProyectosCard";
+import { motion } from "framer-motion";
+import { Text } from "@chakra-ui/react";
 
 type Props = {};
 
 const Proyectos = (props: Props) => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.55, ease: "easeInOut" }}
+      viewport={{ once: true, amount: 0.4 }}
+      >
       <Text
         className={styles.proyectos_title}
         fontSize={["14px", "16px", "20px", "26px"]}
@@ -25,9 +32,9 @@ const Proyectos = (props: Props) => {
           desc={"Play to earn NFT Game"}
           image={"image"}
         />
-        </div>
-        
-        <div className={styles.cards_cont}>
+      </div>
+
+      <div className={styles.cards_cont}>
         <ProyectosCard
           title={"Funky Funkos"}
           desc={"E-commerce"}
@@ -39,7 +46,7 @@ const Proyectos = (props: Props) => {
           image={"image"}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
