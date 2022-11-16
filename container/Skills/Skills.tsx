@@ -28,14 +28,18 @@ import Skill from "./Skill";
 type Props = {};
 
 const Skills = (props: Props) => {
-  return (
+
+   return (
     <motion.div
       className={styles.container}
       initial={{ opacity: 0 }}
-      animate={{
+      whileInView={{
         opacity: [0.1, 0.2, 0.35, 0.55, 0.75, 1],
       }}
-      transition={{ duration: 4.05, ease: "easeInOut" }}>
+      // whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.55, ease: "easeInOut" }}
+      viewport={{ once: true, amount: 0.4 }}
+      >
         
       <Box
         mb={[1.5, 2.5, 3.5]}

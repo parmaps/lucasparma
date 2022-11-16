@@ -77,8 +77,10 @@ const Home: NextPage = () => {
       </section>
 
       {/*  */}
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      <section id="contacto">
+        <Footer />
+      </section>
       <WavesBottom />
     </div>
   );

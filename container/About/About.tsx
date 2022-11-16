@@ -7,7 +7,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <HStack maxW={[250, 340, 380]}>
+    <HStack maxW={[251, 386, 410, 430]}>
       <VStack
         pl={[0, 0, 2, 6]}
         ml={[0, 0, 1, 2.5]}
