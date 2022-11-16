@@ -52,14 +52,43 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     }
 }
 
-.cv {
+.footer_text {
     color: $sections-grad-color;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     position: relative;
+    font-size: 20px;
     cursor: pointer;
-    // top: 70px;
+    margin-left: 10px;
+
+    @media (max-width: 1000px) {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-left: 7.5px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        margin-left: 7.5px;
+        margin-top: 2.5px;
+    }
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 0px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        margin-top: 2.5px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 11px;
+    }
+
 }
 
 .cv_hover {

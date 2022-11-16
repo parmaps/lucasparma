@@ -35,7 +35,14 @@ function SocialIconsFooter({}: Props) {
           url="mailto:l.parma93@gmail.com/"
           fgColor="#D6FDFF"
           bgColor="#1a4278"
-        />  
+        />
+        <a
+        href="/files/cv-lucas-parma.pdf"
+        // target="_blank"
+        rel="noopener noreferrer"
+        download>
+        <p className={` ${styles.footer_text} ${styles.cv_hover} `}>CV</p>
+      </a>  
       </HStack>
     </Box>
   );
