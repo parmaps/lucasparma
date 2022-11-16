@@ -1,7 +1,8 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import styles from "./Footer.module.scss";
-import SocialIconsFooter from "./SocialIcons";
+import SocialIconsFooter from "./SocialIconsFooter";
+import Link from "next/link";
 
 type Props = {};
 
@@ -10,10 +11,15 @@ const Footer = (props: Props) => {
     <Flex
       as="footer"
       align="center"
-      justify="center"
+      justify="space-around"
       height="100px"
       maxH="100px"
       className={styles.footer}>
+      <Link href="/">
+        <Text className={` ${styles.footer_text} ${styles.copyright} `}>
+          Lucas Parma © 2022
+        </Text>
+      </Link>
       <SocialIconsFooter />
     </Flex>
   );
