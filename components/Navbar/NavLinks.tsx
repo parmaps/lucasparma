@@ -33,7 +33,7 @@ function NavLinks({}: Props) {
     <>
       <Box
         as={motion.div}
-        initial={{ x: 500, opacity: 0, scale: 0.75 }}
+        initial={{ x: 0, opacity: 0, scale: 0.75 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition="1.5s">
         <ul className={styles.navbar_links}>
