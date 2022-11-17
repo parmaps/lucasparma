@@ -1,7 +1,9 @@
 @import "../../styles/colors.module.scss";
 
+$RADIUS: 25px;
+
 .container {
-    padding: 6rem 0rem 3rem 0rem;
+    padding: 6rem 0rem 2rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +20,22 @@
 }
 
 .cards_cont {
+    // border: 1px dotted white;
+    width: 92.5%;
     display: flex;
+    justify-content: space-evenly;
+    // margin-top: 3rem;
+
+    @media (max-width: 1350px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        // border: 2px solid white;
+        flex-direction: column;
+        align-items: center;
+    }
     // min-width: 500px;
     // flex-direction: column;
     // justify-content: center;
@@ -26,10 +43,20 @@
 }
 
 .card {
-    border: 1px solid $light-color;
-    border-radius: 15px;
+    border: 1px solid $orange;
+    border-radius: $RADIUS;
+    margin-top: 3rem;
+
+    @media (max-width: 1200px) {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        // border: 2px solid white;
+        margin-top: 2rem;
+    }
     // box-shadow: $orange 0px 8px 24px;
-    box-shadow: rgba(255, 255, 255, 0.05) 0px 6px 24px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+    // box-shadow: rgba(255, 255, 255, 0.05) 0px 6px 24px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
 }
 
 .card_title {
@@ -44,4 +71,9 @@
     font-weight: 300;
     text-align: justify;
     letter-spacing: 0.01em;
+}
+
+
+.card_image {
+    border-radius: $RADIUS;
 }
