@@ -66,6 +66,7 @@ const Skills = (props: Props) => {
           <Skill icon={javaScriptIcon} iconName={"JavaScript"}></Skill>
           <Skill icon={reactIcon} iconName={"React"}></Skill>
           <Skill icon={reduxIcon} iconName={"Redux"}></Skill>
+          <div className={styles.break}></div>
           <Skill icon={htmlIcon} iconName={"HTML5"}></Skill>
           <Skill icon={cssIcon} iconName={"CSS3"}></Skill>
           <Skill icon={sassIcon} iconName={"Sass"}></Skill>
@@ -76,15 +77,16 @@ const Skills = (props: Props) => {
       <div className={styles.back_end_cont}>
         <h6>BACK-END</h6>
         <div className={styles.back_end}>
-          <Skill icon={pythonIcon} iconName={"Python"}></Skill>
-          <Skill icon={djangoIcon} iconName={"Django"}></Skill>
-          <Skill icon={flaskIcon} iconName={"Flask"}></Skill>
           <Skill icon={expressIcon} iconName={"Express"}></Skill>
-          <Skill icon={firebaseIcon} iconName={"Firebase"}></Skill>
+          <Skill icon={djangoIcon} iconName={"Django"}></Skill>
+          <Skill icon={pythonIcon} iconName={"Python"}></Skill>
+          <Skill icon={flaskIcon} iconName={"Flask"}></Skill>
+          <Skill icon={nodeIcon} iconName={"Node.js"}></Skill>
+          
         </div>
         <div className={styles.back_end}>
           <Skill icon={sequelizeIcon} iconName={"Sequelize"}></Skill>
-          <Skill icon={nodeIcon} iconName={"Node.js"}></Skill>
+          <Skill icon={firebaseIcon} iconName={"Firebase"}></Skill>
           <Skill icon={nextIcon} iconName={"Next.js"}></Skill>
           <Skill icon={mongoIcon} iconName={"MongoDB"}></Skill>
           <Skill icon={psqlIcon} iconName={"PSQL"}></Skill>
