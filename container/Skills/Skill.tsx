@@ -6,7 +6,7 @@ type Props = { icon: any; iconName: string };
 
 const Skill = (props: Props) => {
   const techNames = {
-    hidden: { opacity: 0.55 },
+    hidden: { opacity: 0.8 },
     hover: {
       opacity: 1,
       scale: 1.2,
@@ -14,7 +14,7 @@ const Skill = (props: Props) => {
         duration: 0.5,
         // ease: "linear",
       },
-      color: "black",
+      color: "white",
     },
   };
 
