@@ -9,3 +9,8 @@ $bg-color: rgba(0, 168, 232, 0.075);
     letter-spacing: 0.25em;
     /* background-color: $bg-color; */
 }
+
+.hidden {
+    opacity: 0;
+    font-size: 2px;
+}

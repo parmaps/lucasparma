@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Hero.module.scss";
 import { Center, chakra, shouldForwardProp, Text } from "@chakra-ui/react";
 import { isValidMotionProp, motion } from "framer-motion";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
 
@@ -41,7 +41,7 @@ function Name({}: Props) {
           fontSize={["20px", "40px", "60px"]}
           p={[1, 1.5]}
           >
-          {text}
+          <span className={styles.hidden}>..</span>{text}
         </Text>
         {/* <Cursor cursorColor="rgb(40, 32, 43)"></Cursor> */}
       </ChakraCenter>
