@@ -34,10 +34,9 @@ const Skills = (props: Props) => {
       className={styles.container}
       initial={{ opacity: 0 }}
       whileInView={{
-        opacity: [0.1, 0.2, 0.35, 0.55, 0.75, 1],
+        opacity: [0.2, 0.4, 0.6, 0.8, 1],
       }}
-      // whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.55, ease: "easeInOut" }}
+      transition={{ duration: 0.75, ease: "linear" }}
       viewport={{ once: false, amount: 0.4 }}
       >
         
