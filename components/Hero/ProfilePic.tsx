@@ -1,12 +1,14 @@
-import { Box, Center, Spacer } from "@chakra-ui/react";
+import { Box, Center, Spacer, StylesProvider } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
+import styles from "./ProfilePic.module.scss";
 
 type Props = {};
 
 function ProfilePic({}: Props) {
   return (
     <Box
+    className={styles.picture}
     w={[192, 260, 340, 380]}
     mx="auto"
     mt={[2.5,3]}

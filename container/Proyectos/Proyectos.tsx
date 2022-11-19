@@ -14,7 +14,7 @@ const Proyectos = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.55, ease: "easeInOut" }}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <Text
         className={styles.proyectos_title}
