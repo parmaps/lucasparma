@@ -30,8 +30,8 @@ export default function ProyectosCard(props: Props) {
         alt="profile"
         src={props.image}
         layout="responsive"
-        width="831"
-        height="622"></Image>
+        width="1270"
+        height="700"></Image>
     </Box>
   );
 }

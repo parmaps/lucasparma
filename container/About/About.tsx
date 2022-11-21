@@ -32,6 +32,7 @@ const About = (props: Props) => {
       <VStack
         pl={[0, 0, 2, 6]}
         ml={[0, 0, 1, 2.5]}
+        
         {...animationProps}>
         <Text
           className={styles.about_title}
@@ -42,6 +43,7 @@ const About = (props: Props) => {
         </Text>
         <Text
           className={styles.about_text}
+          pb={[5, 6, 2]}
           fontSize={["sm", "lg", "22px"]}>
           Soy Licenciado en Psicología, y luego de recibirme me enfoqué en
           estudiar programación al sentirme convocado por una disciplina

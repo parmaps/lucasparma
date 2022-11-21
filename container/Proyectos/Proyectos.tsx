@@ -38,7 +38,7 @@ const Proyectos = (props: Props) => {
         <ProyectosCard
           title={"Portfolio"}
           desc={"Mi portfolio"}
-          image={"/proyecto-portfolio.png"}
+          image={"/proyecto-tmdb.png"}
         />
         <ProyectosCard
           title={"Portfolio"}
