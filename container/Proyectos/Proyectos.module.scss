@@ -25,15 +25,16 @@ $RADIUS: 25px;
 
 .cards_cont {
     // border: 1px dotted white;
-    width: 92.5%;
+    width: 85%;
     display: flex;
     justify-content: space-evenly;
     // margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
 
-    @media (max-width: 1350px) {
-        flex-direction: column;
-        align-items: center;
-    }
+    // @media (min-width: 1550px) {
+    //     flex-direction: row;
+    // }
 
     @media (max-width: 768px) {
         // border: 2px solid white;
@@ -47,17 +48,21 @@ $RADIUS: 25px;
 }
 
 .card {
-    border: 1px solid $orange;
+    border: 1px solid $background-color-light;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
     border-radius: $RADIUS;
     margin-top: 3rem;
+    width: 60% !important; 
 
     @media (max-width: 1200px) {
         margin-top: 2rem;
+        width: 70% !important;
     }
 
     @media (max-width: 768px) {
         // border: 2px solid white;
         margin-top: 2rem;
+        width: 80% !important;
     }
     // box-shadow: $orange 0px 8px 24px;
     // box-shadow: rgba(255, 255, 255, 0.05) 0px 6px 24px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;

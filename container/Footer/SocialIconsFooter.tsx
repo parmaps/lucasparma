@@ -32,7 +32,7 @@ function SocialIconsFooter({}: Props) {
         />
         <SocialIcon
           className={`${styles.menu_hover} ${styles.social_icon}`}
-          url="mailto:l.parma93@gmail.com/"
+          url="mailto:l.parma93@gmail.com"
           fgColor="#D6FDFF"
           bgColor="#1a4278"
         />
@@ -40,6 +40,7 @@ function SocialIconsFooter({}: Props) {
         href="/files/cv-lucas-parma.pdf"
         // target="_blank"
         rel="noopener noreferrer"
+        target="_blank"
         download>
         <p className={` ${styles.footer_text} ${styles.cv_hover} `}>CV</p>
       </a>  

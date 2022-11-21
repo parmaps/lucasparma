@@ -14,7 +14,7 @@ const Proyectos = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.55, ease: "easeInOut" }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <Text
         className={styles.proyectos_title}
@@ -22,17 +22,23 @@ const Proyectos = (props: Props) => {
         pt={[1]}>
         mis proyectos
       </Text>
-      <motion.div
-        className={styles.cards_cont}
-        // initial={{ opacity: 0 }}
-        // whileInView={{ opacity: 1 }}
-        // transition={{ duration: 1.55, ease: "easeInOut" }}
-        // viewport={{ once: false, amount: 0.3 }}
-        >
+      <motion.div className={styles.cards_cont}>
         <ProyectosCard
           title={"Portfolio"}
           desc={"Mi portfolio"}
           image={"/proyecto-portfolio.png"}
+        />
+        <ProyectosCard
+          title={"Portfolio"}
+          desc={"Mi portfolio"}
+          image={"/proyecto-intergalaxy.png"}
+        />
+      </motion.div>
+      <motion.div className={styles.cards_cont}>
+        <ProyectosCard
+          title={"Portfolio"}
+          desc={"Mi portfolio"}
+          image={"/proyecto-tmdb.png"}
         />
         <ProyectosCard
           title={"Portfolio"}
@@ -40,37 +46,6 @@ const Proyectos = (props: Props) => {
           image={"/proyecto-portfolio.png"}
         />
       </motion.div>
-      <motion.div
-        className={styles.cards_cont}
-        // initial={{ opacity: 0 }}
-        // whileInView={{ opacity: 1 }}
-        // transition={{ duration: 1.55, ease: "easeInOut" }}
-        // viewport={{ once: false, amount: 0.4 }}
-        >
-        <ProyectosCard
-          title={"Portfolio"}
-          desc={"Mi portfolio"}
-          image={"/proyecto-portfolio.png"}
-        />
-        <ProyectosCard
-          title={"Portfolio"}
-          desc={"Mi portfolio"}
-          image={"/proyecto-portfolio.png"}
-        />
-      </motion.div>
-
-      {/* <div className={styles.cards_cont}>
-        <ProyectosCard
-          title={"Funky Funkos"}
-          desc={"E-commerce"}
-          image={"image"}
-        />
-        <ProyectosCard
-          title={"TMDB"}
-          desc={"Replica de The Movie Database"}
-          image={"image"}
-        />
-      </div> */}
     </motion.div>
   );
 };
