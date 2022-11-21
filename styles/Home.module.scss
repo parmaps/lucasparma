@@ -49,12 +49,12 @@
 .wave svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 80px;
+  width: calc(150% + 1.3px);
+  height: 70px;
 
   @media (max-width: 600px) {
-    width: calc(150% + 103px);
-    height: 70px;
+    width: calc(155% + 120px);
+    height: 50px;
   }
 
 }

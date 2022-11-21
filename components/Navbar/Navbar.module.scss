@@ -4,11 +4,12 @@ $dark-color: rgba(21, 15, 24, 0.95);
 $light-color: rgba(214, 253, 255, 0.7);
 $light-color-hover: rgba(214, 253, 255, 0.8);
 
+
 .navbar {
-    color: $light-color;
-    background-color: transparent;
-    border-radius: 2px;
-    box-shadow: 2px 1px 5px 1px $shadow-color;
+    color: $sections-grad-color;
+    font-weight: 900;
+    background-color: $background-color;
+    box-shadow: 2px 1px 2.5px 1px $background-color-dark;
     letter-spacing: 0.5px;
     position: relative;
     top: 0;
@@ -25,11 +26,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     text-transform: uppercase;
     position: relative;
     float: right;
-    right: 22.5%;
-
-    @media (min-width: 1600px) {
-        right: 50%;
-    }
+    right: 5%;    
 
     li {
         margin: 0 1rem;
@@ -37,7 +34,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
         font-size: small;
 
         a {
-            font-weight: 400;
+            font-weight: 900;
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -57,11 +54,11 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
     border: none;
     position: relative;
     margin-top: 5px;
-    top: 2.5px;
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #235789;
+    background-color: $background-color;
     margin: 5px;
     cursor: pointer;
 
@@ -102,7 +99,7 @@ $light-color-hover: rgba(214, 253, 255, 0.8);
 .hover {
     &:hover {
         color: $light-color-hover;
-        background-color: red;
+        // background-color: red;
     }
 }
 

@@ -11,7 +11,7 @@ const Navbar = (props: Props) => {
       as="nav"
       align="center"
       justify="space-between"
-      maxH="50px"
+      maxH="55px"
       className={styles.navbar}>
       <p/>
       <NavLinks />
