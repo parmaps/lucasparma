@@ -16,7 +16,7 @@ $PAR_FONT_SIZE: 22px;
 }
 
 .title {
-    color: $background-color;
+    color: $background-color-dark;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -30,7 +30,7 @@ $PAR_FONT_SIZE: 22px;
 
     // margin-bottom: 1rem;
     p {
-        color: $dark-color;
+        color: $background-color-dark;
         font-weight: 400;
         font-size: $PAR_FONT_SIZE;
 
@@ -69,7 +69,7 @@ $PAR_FONT_SIZE: 22px;
     padding-bottom: 1rem;
 
     h6 {
-        color: $dark-color;
+        color: $background-color-dark;
         font-weight: 400;
         font-size: $PAR_FONT_SIZE;
 
@@ -98,7 +98,7 @@ $PAR_FONT_SIZE: 22px;
     padding-bottom: 1rem;
 
     h6 {
-        color: $dark-color;
+        color: $background-color-dark;
         font-weight: 400;
         font-size: $PAR_FONT_SIZE;
 
