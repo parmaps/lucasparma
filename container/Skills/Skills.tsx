@@ -37,7 +37,7 @@ const Skills = (props: Props) => {
         opacity: [0.2, 0.4, 0.6, 0.8, 1],
       }}
       transition={{ duration: 0.75, ease: "linear" }}
-      viewport={{ once: false, amount: 0.4 }}
+      viewport={{ once: false, amount: 0.35 }}
       >
         
       <Box
