@@ -1,12 +1,11 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
-import { setDefaultResultOrder } from "dns";
+import { Box, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import styles from "./Proyectos.module.scss";
 
-type Props = { title: string; desc: string; image: any };
+type Props = { image: any; text: string, stack: string };
 
 export default function ProyectosCard(props: Props) {
   const isMobile = useMediaQuery({ maxWidth: 560 });
@@ -23,15 +22,42 @@ export default function ProyectosCard(props: Props) {
     if (isNotMobile) {
       setWidth("1270");
       setHeight("700");
-    } 
-    console.log("ejecuto useEffect");
+    }
   });
 
-  
+  // const [isAnimatedMobile, setIsAnimatedMobile] = useState(false);
+  // const handleAnimation = () => {
+  //   console.log("handling mobile animation");
+  //   setIsAnimatedMobile(!isAnimatedMobile);
+  // };
 
-  console.log("image", props.image);
-  console.log("Mobile", isMobile, "notMobile", isNotMobile);
-  console.warn("width", width, "height", height)
+  // // Animation variants
+  // const variants = { visible: { scale: 0.5 }, hidden: { opacity: 1 } };
+
+  let animationProps = {};
+  // Desktop animation
+  if (isNotMobile) {
+    animationProps = {
+      whileFocus: {
+        scale: 1.2,
+        transition: { duration: 1 },
+      },
+    };
+  }
+  // Mobile animation
+  // else {
+  //   animationProps = {
+  //     // onClick: handleAnimation,
+  //     // initial: false,
+  //     // animate: isAnimatedMobile ? "visible" : "hidden",
+  //     // variants: variants,
+  //     whileFocus: {
+  //       scale: 1.2,
+  //       transition: { duration: 1 },
+  //     },
+  //   };
+  // }
+
   return (
     <Box
       as={motion.div}
@@ -41,14 +67,11 @@ export default function ProyectosCard(props: Props) {
       whileInView={{ opacity: 1 }}
       transition="1.5s easeInOut"
       viewport={{ once: false, amount: 0.35 }}
-      // mx="auto"
-      // mb={[2.5, 5, 10]}
-      // minW={[100, 200, 300]}
-      // minH={[100, 200, 300]}
-    >
-      {/* <Heading className={styles.card_title} fontSize="l">{props.title}</Heading> */}
-      {/* <Text className={styles.card_text} mt={4}>{props.desc}</Text> */}
-
+      whileFocus={{
+        scale: 1.2,
+        transition: { duration: 1 },
+      }}
+      {...animationProps}>
       <Image
         className={styles.card_image}
         alt="profile"
@@ -56,14 +79,8 @@ export default function ProyectosCard(props: Props) {
         layout="responsive"
         width={width}
         height={height}></Image>
-
-      {/* {isNotMobile && <Image
-        className={styles.card_image}
-        alt="profile"
-        src={props.image}
-        layout="responsive"
-        width="1270"
-        height="700"></Image>} */}
+      <Text className={styles.card_text}>{props.text}</Text>
+      <Text className={styles.card_text}>{`Tecnologías: ${props.stack}`}</Text>
     </Box>
   );
 }
