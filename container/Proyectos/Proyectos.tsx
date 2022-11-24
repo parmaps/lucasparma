@@ -65,7 +65,7 @@ const Proyectos = (props: Props) => {
         />
         <ProyectosCard
           text={tmdbText}
-          stack={gameStack}
+          stack={tmdbStack}
           image={
             isMobile ? "/proyecto-tmdb-mobile.png" : "/proyecto-tmdb.png"
           }
