@@ -48,6 +48,7 @@ const Proyectos = (props: Props) => {
         <ProyectosCard
           text={gameText}
           stack={gameStack}
+          url={"https://github.com/parmaps/itesa-nft-game"}
           image={
             isMobile
               ? "/proyecto-intergalaxy-mobile.png"
@@ -59,6 +60,7 @@ const Proyectos = (props: Props) => {
         <ProyectosCard
           text={ecommerceText}
           stack={ecommerceStack}
+          url={"https://github.com/parmaps/FunkyFunkos"}
           image={
             isMobile ? "/proyecto-funky-mobile.png" : "/proyecto-funky.png"
           }
@@ -66,6 +68,7 @@ const Proyectos = (props: Props) => {
         <ProyectosCard
           text={tmdbText}
           stack={tmdbStack}
+          url={"https://github.com/parmaps/checkpoint-TMDB-220101"}
           image={
             isMobile ? "/proyecto-tmdb-mobile.png" : "/proyecto-tmdb.png"
           }
