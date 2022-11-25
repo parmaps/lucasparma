@@ -23,6 +23,7 @@ function NavLinks({}: Props) {
   const links = ["about", "skills", "proyectos", "contacto"];
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
+  const itemRef = useRef(null);
 
   const drawerVariants = {
     open: { opacity: 0.75 },
@@ -46,7 +47,7 @@ function NavLinks({}: Props) {
           ))}
         </ul>
 
-        <button ref={btnRef}></button>
+        
 
         <Menu>
           <MenuButton
@@ -76,7 +77,7 @@ function NavLinks({}: Props) {
           size={"xs"}
           // closeOnOverlayClick={true}
           // returnFocusOnClose={true}
-          finalFocusRef={btnRef}>
+          finalFocusRef={itemRef}>
           <DrawerOverlay />
           <DrawerContent
             maxW={[132, 145]}
@@ -92,7 +93,9 @@ function NavLinks({}: Props) {
                   <li
                     key={`link-${item}`}
                     className={styles.drawer_text}
-                    onClick={onClose}>
+                    onClick={onClose}
+                    ref={itemRef}
+                    >
                     <Link href={`#${item}`} passHref>
                       <ChakraLink fontSize={["14px", "16px"]}>
                         {item}
