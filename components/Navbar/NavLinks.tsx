@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import {
@@ -22,7 +22,7 @@ type Props = {};
 function NavLinks({}: Props) {
   const links = ["about", "skills", "proyectos", "contacto"];
   const { isOpen, onOpen, onClose } = useDisclosure();
-  console.log("isOpen", isOpen);
+  const btnRef = useRef(null);
 
   const drawerVariants = {
     open: { opacity: 0.75 },
@@ -46,6 +46,8 @@ function NavLinks({}: Props) {
           ))}
         </ul>
 
+        <button ref={btnRef}></button>
+
         <Menu>
           <MenuButton
             className={`${styles.navbar_menu}`}
@@ -54,17 +56,27 @@ function NavLinks({}: Props) {
             isRound="true"
             size="sm"
             mr={[2, 3]}
+            _hover={{
+              fontWeight: "semibold",
+            }}
+            _active={{
+              backgroundColor: "#122F54",
+            }}
             icon={<MdClearAll />}
             variant="ghost"
+            ref={btnRef}
             onClick={onOpen}
           />
         </Menu>
 
         <Drawer
           isOpen={isOpen}
-          placement="right"
           onClose={onClose}
-          size={"xs"}>
+          placement="right"
+          size={"xs"}
+          // closeOnOverlayClick={true}
+          // returnFocusOnClose={true}
+          finalFocusRef={btnRef}>
           <DrawerOverlay />
           <DrawerContent
             maxW={[132, 145]}
@@ -77,7 +89,10 @@ function NavLinks({}: Props) {
               />
               <ul>
                 {links.map((item) => (
-                  <li key={`link-${item}`} className={styles.drawer_text}>
+                  <li
+                    key={`link-${item}`}
+                    className={styles.drawer_text}
+                    onClick={onClose}>
                     <Link href={`#${item}`} passHref>
                       <ChakraLink fontSize={["14px", "16px"]}>
                         {item}
