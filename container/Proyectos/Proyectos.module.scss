@@ -106,3 +106,26 @@ $RADIUS_MOBILE: 10px;
         border-radius: $RADIUS_MOBILE;
     }
 }
+
+.social_icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 0px;
+
+    @media (max-width: 768px) {
+        width: 30px !important;
+        height: 30px !important;
+        margin-top: 5px;
+    }
+}
+
+.menu_hover {
+    border-radius: 55%;
+    // transition: 0.10s ease-in;
+    padding: 5px;
+
+    &:hover {
+        // background-color: $light-color !important;
+        border: 1px groove $background-color-light;
+    }
+}

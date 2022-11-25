@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { SocialIcon } from "react-social-icons";
 import styles from "./Proyectos.module.scss";
 
-type Props = { image: any; text: string, stack: string };
+type Props = { image: any; text: string; stack: string, url: string };
 
 export default function ProyectosCard(props: Props) {
   const isMobile = useMediaQuery({ maxWidth: 560 });
@@ -80,8 +81,21 @@ export default function ProyectosCard(props: Props) {
         width={width}
         height={height}></Image>
       <Text className={styles.card_text}>{props.text}</Text>
-      <p className={styles.card_text} style={{paddingBottom: "0px"}}>Tecnologías: </p>
-      <Text className={styles.card_text} style={{paddingTop: "0px"}}>{props.stack}</Text>
+      <p className={styles.card_text} style={{ paddingBottom: "0px" }}>
+        Tecnologías:{" "}
+      </p>
+      <Text className={styles.card_text} style={{ paddingTop: "0px" }}>
+        {props.stack}
+      </Text>
+      <span className={styles.card_text}>
+        Código:{" "}
+        <SocialIcon
+          className={`${styles.menu_hover} ${styles.social_icon}`}
+          url={props.url}
+          fgColor="#D6FDFF"
+          bgColor="#1a4278"
+        />
+      </span>
     </Box>
   );
 }
