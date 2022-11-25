@@ -80,7 +80,8 @@ export default function ProyectosCard(props: Props) {
         width={width}
         height={height}></Image>
       <Text className={styles.card_text}>{props.text}</Text>
-      <Text className={styles.card_text}>{`Tecnologías: ${props.stack}`}</Text>
+      <p className={styles.card_text} style={{paddingBottom: "0px"}}>Tecnologías: </p>
+      <Text className={styles.card_text} style={{paddingTop: "0px"}}>{props.stack}</Text>
     </Box>
   );
 }
