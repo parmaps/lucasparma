@@ -6,9 +6,15 @@ import { useMediaQuery } from "react-responsive";
 import { SocialIcon } from "react-social-icons";
 import styles from "./Projects.module.scss";
 
-type Props = { image: any; text: string; stack: string, url: string, iframeUrl?: string };
+type Props = {
+  image: any;
+  text: string;
+  stack: string;
+  url: string;
+  iframeUrl: string;
+};
 
-export default function ProyectosCard(props: Props) {
+export default function ProyectosIframeCard(props: Props) {
   const isMobile = useMediaQuery({ maxWidth: 560 });
   const isNotMobile = useMediaQuery({ minWidth: 561 });
   // Set default img width (Desktop width)
@@ -18,23 +24,13 @@ export default function ProyectosCard(props: Props) {
   useEffect(() => {
     if (isMobile) {
       setWidth("700");
-      setHeight("960");
+      setHeight("1270");
     }
     if (isNotMobile) {
       setWidth("1270");
       setHeight("700");
     }
   });
-
-  // const [isAnimatedMobile, setIsAnimatedMobile] = useState(false);
-  // const handleAnimation = () => {
-  //   console.log("handling mobile animation");
-  //   setIsAnimatedMobile(!isAnimatedMobile);
-  // };
-
-  // // Animation variants
-  // const variants = { visible: { scale: 0.5 }, hidden: { opacity: 1 } };
-
   let animationProps = {};
   // Desktop animation
   if (isNotMobile) {
@@ -45,24 +41,11 @@ export default function ProyectosCard(props: Props) {
       },
     };
   }
-  // Mobile animation
-  // else {
-  //   animationProps = {
-  //     // onClick: handleAnimation,
-  //     // initial: false,
-  //     // animate: isAnimatedMobile ? "visible" : "hidden",
-  //     // variants: variants,
-  //     whileFocus: {
-  //       scale: 1.2,
-  //       transition: { duration: 1 },
-  //     },
-  //   };
-  // }
 
   return (
     <Box
       as={motion.div}
-      className={styles.card}
+      className={styles.card_iframe}
       w={[275, 420, 500, 550, 622]}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -73,13 +56,11 @@ export default function ProyectosCard(props: Props) {
         transition: { duration: 1 },
       }}
       {...animationProps}>
-      <Image
-        className={styles.card_image}
-        alt="profile"
-        src={props.image}
-        layout="responsive"
-        width={width}
-        height={height}></Image>
+      <iframe
+        className={styles.card_iframe_media}
+        src={props.iframeUrl}
+        title={"name"}
+      />
       <Text className={styles.card_text}>{props.text}</Text>
       <p className={styles.card_text} style={{ paddingBottom: "0px" }}>
         Tecnologías:{" "}
