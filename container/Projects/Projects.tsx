@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Proyectos.module.scss";
-import ProyectosCard from "./ProyectosCard";
+import ProyectosCard from "./ProjectsCard";
 import { motion } from "framer-motion";
 import { Box, Spacer, Text } from "@chakra-ui/react";
 import Image from "next/image";

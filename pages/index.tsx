@@ -11,7 +11,7 @@ import {
 } from "../container";
 import { Navbar } from "../components";
 import Hero from "../components/Hero/Hero";
-import Proyectos from "../container/Proyectos/Proyectos";
+import Proyectos from "../container/Projects/Projects";
 import WaveMiddle from "../components/Curves/WaveMiddle";
 import WaveMiddleBlue from "../components/Curves/WaveMiddleBlue";
 import Name from "../components/Hero/Name";
