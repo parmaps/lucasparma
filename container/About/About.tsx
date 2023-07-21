@@ -22,35 +22,27 @@ const About = (props: Props) => {
     animationProps = {
       as: motion.div,
       initial: { opacity: 0.15 },
-      animate: { opacity: [0.30, 0.60, 0.9, 1] },
+      animate: { opacity: [0.3, 0.6, 0.9, 1] },
       transition: "2.55s",
     };
   }
 
   return (
     <HStack maxW={[251, 386, 410, 430]}>
-      <VStack
-        pl={[0, 0, 2, 6]}
-        ml={[0, 0, 1, 2.5]}
-        
-        {...animationProps}>
+      <VStack pl={[0, 0, 2, 6]} ml={[0, 0, 1, 2.5]} {...animationProps}>
         <Text
           className={styles.about_title}
           fontSize={["14px", "16px", "20px", "26px"]}
-          pt={[1.5]}
-          >
+          pt={[1.5]}>
           Sobre mí
         </Text>
         <Text
           className={styles.about_text}
           pb={[5, 6, 2]}
           fontSize={["sm", "lg", "22px"]}>
-          Soy Licenciado en Psicología, y luego de recibirme me enfoqué en
-          estudiar programación al sentirme convocado por una disciplina
-          más práctica. Así descubrí un mundo fascinante, que me motiva a
-          desafiarme y seguir mejorando cada día. Me destaco por aprender
-          rápido, por mi capacidad de escucha activa y mi nivel de
-          compromiso.{" "}
+          Soy un profesional comprometido, meticuloso y con una sólida capacidad
+          de comunicación. Destaco además por mi motivación para aprender y mi
+          disposición para trabajar en equipo.{" "}
         </Text>
       </VStack>
     </HStack>

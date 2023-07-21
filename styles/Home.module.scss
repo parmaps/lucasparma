@@ -23,17 +23,14 @@
 }
 
 .horizontal {
+  flex-direction: column;
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: space-evenly;
   width: 70%;
   position: relative;
   margin: 0 auto;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-    align-items: center;
-  }
+ 
 }
 
 // Top Wave
