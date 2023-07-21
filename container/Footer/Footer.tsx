@@ -17,7 +17,7 @@ const Footer = (props: Props) => {
       className={styles.footer}>
       <Link href="/">
         <Text className={` ${styles.footer_text} ${styles.copyright} `}>
-          Lucas Parma © 2022
+          Lucas Parma © 2023
         </Text>
       </Link>
       <SocialIconsFooter />
