@@ -37,7 +37,7 @@ function SocialIconsFooter({}: Props) {
           bgColor="#1a4278"
         />
         <a
-        href="/files/cv-lucas-parma.pdf"
+        href="/files/cv-lucas-parma-full-stack.pdf"
         // target="_blank"
         rel="noopener noreferrer"
         target="_blank"
@@ -50,3 +50,4 @@ function SocialIconsFooter({}: Props) {
 }
 
 export default SocialIconsFooter;
+
